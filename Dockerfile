@@ -3,7 +3,13 @@ LABEL maintainer="mrabbitt"
 ENV WORKBENCH_VERSION=41.0.1
 
 RUN apk update  \
-    && apk add apache2 php5-apache2 php5-json php5-soap php5-openssl php5-curl  \
+    && apk add \
+        apache2  \
+        php5-apache2  \
+        php5-curl  \
+        php5-json  \
+        php5-openssl  \
+        php5-soap
     && mkdir -p /var/run/apache2  \
     && chown apache:apache /var/run/apache2
 RUN apk add curl \
