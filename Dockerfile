@@ -9,7 +9,7 @@ RUN apk update  \
         php5-curl  \
         php5-json  \
         php5-openssl  \
-        php5-soap
+        php5-soap  \
     && mkdir -p /var/run/apache2  \
     && chown apache:apache /var/run/apache2
 RUN apk add curl \
