@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.8
 LABEL maintainer="mrabbitt"
 ENV WORKBENCH_VERSION=41.0.1
 
