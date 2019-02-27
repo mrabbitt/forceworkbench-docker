@@ -1,6 +1,6 @@
 FROM alpine:3.8
 LABEL maintainer="mrabbitt"
-ENV WORKBENCH_VERSION=41.0.1
+ENV WORKBENCH_VERSION=45.0.1
 
 RUN apk update  \
     && apk add \
